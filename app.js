@@ -14,7 +14,7 @@ form.addEventListener('submit', async function (e) {
         const name = document.createElement('H2')
         const desc = document.createElement('P')
         img.setAttribute('src', result.show.image.medium)
-        name.textContent = result.show.name
+        name.textContent = `${result.show.name} (Rating: ${result.show.rating.average})`
         desc.textContent = result.show.summary
         showContainer.append(img)
         showContainer.append(name)
